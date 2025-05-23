@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title></title>
+    <script type="importmap">
+        {
+            "imports": {
+                "search": "./resource/js/search.js"
+            }
+        }
+    </script>
+    <script type="module">
+        import { ui } from 'search'
+        document.addEventListener('DOMContentLoaded', _ => {
+            ui();
+        });
+    </script>
+    <link rel="stylesheet" href="./resource/css/search.css"></link>
+</head>
+
+<body id="search">
+    <header id="search__header"></header>
+    <div id="search__body">
+        <div id="search__content">
+            <form id="search__form">
+                <div id="search__input-box">
+                    <select name="site"></select>
+                    <input type="text" name="word" />
+                    <input type="hidden" name="url" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer id="search__footer"></footer>
+</body>
+</html>
